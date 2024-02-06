@@ -20,9 +20,9 @@ public class MoveTheSun : MonoBehaviour
         if (stopTime == false)
         {
             clock += Time.deltaTime;
-            Debug.Log(Time.deltaTime);
+            
             gameObject.transform.Rotate(0.030f * Time.deltaTime * 1000, 0, 0);
-            Debug.Log(gameObject.transform.eulerAngles.x);
+            
             if (clock > 12.0f)
             {
                 clock -= 12.0f;
