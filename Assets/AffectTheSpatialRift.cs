@@ -10,7 +10,7 @@ public class AffectTheSpatialRift : MonoBehaviour
 {
     // Start is called before the first frame update
     public static UnityEvent<Material> m_SeasonalDrift = new UnityEvent<Material>();
-    public float responsiveness = 2;
+    public float responsiveness = 16;
     private GameObject previousBlock;
     private GameObject newBlock;
     private Color prevColor;
@@ -19,7 +19,7 @@ public class AffectTheSpatialRift : MonoBehaviour
     Camera cam;
     private int[] sequence = { 0, 1, 0, 2, 3, 2, 0, 3, 666 };
     private int i = 0;
-    public float pulseSpeed = 2f;
+    public float pulseSpeed = 8f;
 
 
     void Start()
